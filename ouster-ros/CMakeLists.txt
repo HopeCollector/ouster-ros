@@ -194,9 +194,12 @@ install(
 
 install(
   DIRECTORY
-    ${_ouster_ros_INCLUDE_DIRS}
+    # ${_ouster_ros_INCLUDE_DIRS}
+    include/
+    ouster-sdk/ouster_client/include/
+    ouster-sdk/ouster_client/include/optional-lite/
   DESTINATION
-    include/${PROJECT_NAME}
+    include
 )
 
 install(
